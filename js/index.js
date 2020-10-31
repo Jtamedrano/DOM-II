@@ -77,6 +77,16 @@ btnThree.addEventListener("click", (e) => {
   e.stopPropagation();
 });
 
+gsap.from(".intro img", { duration: 1, opacity: 0, y: -50 });
+gsap.from(".intro h2", {
+  duration: 1.8,
+  opacity: 0,
+  x: -50,
+  delay: 0.4,
+  ease: "Power1.easeInOut",
+});
+gsap.from(".intro p", { duration: 2.5, opacity: 0, delay: 0.6 });
+
 // Fade in/out effect
 container.style.height = "100vh";
 container.style.display = "flex";
