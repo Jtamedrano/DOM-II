@@ -49,7 +49,7 @@ Note: Drag and drop is a bit more advanced than the others: it's not actually a 
 
 #### Stretch assignment
 
-- [ ] Take a look at the [stretch assignment](stretch-assignment) and follow the instructions in the read me file.
+- [x] Take a look at the [stretch assignment](stretch-assignment) and follow the instructions in the read me file.
 
 ## Submission Format
 
