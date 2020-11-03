@@ -1,5 +1,4 @@
 .home {
-
   .intro {
     padding: 90px 0 10px;
     border-bottom: 2px dashed @navigation-border;
@@ -20,8 +19,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -50,7 +47,23 @@
       }
     }
   }
-
+  .initial,
+  .active {
+    opacity: 1;
+    position: relative;
+    z-index: 900;
+  }
+  .prev,
+  .next {
+    opacity: 0;
+    z-index: 800;
+  }
+  .prev {
+    transform: translateY(-100%);
+  }
+  .next {
+    transform: translateY(100%);
+  }
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
@@ -105,10 +118,10 @@
         width: 80%;
         margin: 0 auto 30px;
       }
-      
+
       .btn {
-        .button-creator(200px, 45px, @button-bg, @white, 1.8rem);     
+        .button-creator(200px, 45px, @button-bg, @white, 1.8rem);
       }
     }
   }
-}// home
+} // home
